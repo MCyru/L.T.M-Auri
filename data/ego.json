@@ -1,0 +1,37 @@
+{
+  "egogifts" :{
+    "02-00-001": {
+        "uuid": "E02-00-001",
+        "name": "Pendant of sin",
+        "acquisitionChance": 0.2,
+        "stats": {
+            "fortitude": 2,
+            "prudence": 2,
+            "temperance": 2,
+            "justice": 2
+        }
+    }
+  },
+  "egoweapons" :{
+    "03-00-001": {
+        "uuid": "E03-00-001",
+        "name": "Baton",
+        "damage": 2,
+        "damageType": "red",
+        "tier": 1
+        }
+    },
+  "egosuits" :{
+    "01-00-001": {
+        "uuid": "E01-00-001",
+        "name": "Suit",
+        "tier": 1,
+        "resistance": {
+            "white": 1,
+            "red": 1,
+            "black": 1,
+            "pale": 1
+        }
+    }
+  }
+}

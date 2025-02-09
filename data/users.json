@@ -1,0 +1,319 @@
+{
+  "users": {
+    "832410987385585705": {
+      "userId": "832410987385585705",
+      "nickname": "Serene Hoshiai",
+      "hp": 39,
+      "sp": 50,
+      "egosuit_uuid": "E01-00-001",
+      "egogifts_uuid": [],
+      "egoweapon_uuid": "E03-00-001",
+      "stats": {
+        "fortitude": 1,
+        "prudence": 1,
+        "temperance": 4,
+        "justice": 100000
+      },
+      "exstats": {
+        "critrate": 1.5,
+        "critchance": 0.5,
+        "break": 100,
+        "breakrate": 2,
+        "defense": 20,
+        "penetration": 5
+      },
+      "fear": 0,
+      "currency": 0,
+      "inventory": []
+    },
+    "997884684560252948": {
+      "userId": "997884684560252948",
+      "nickname": "\"Mad\"",
+      "hp": 1e+32,
+      "sp": 50,
+      "egosuit_uuid": "E01-00-001",
+      "egogifts_uuid": [],
+      "egoweapon_uuid": "E03-00-001",
+      "stats": {
+        "fortitude": 1,
+        "prudence": 1,
+        "temperance": 179,
+        "justice": 5
+      },
+      "exstats": {
+        "critrate": 1.5,
+        "critchance": 0.5,
+        "break": 100,
+        "breakrate": 2,
+        "defense": 20,
+        "penetration": 5
+      },
+      "fear": 0,
+      "currency": 0,
+      "inventory": [],
+      "temperance": 1
+    },
+    "831684049944576021": {
+      "userId": "831684049944576021",
+      "nickname": "Oliver",
+      "hp": 99999880,
+      "sp": 50,
+      "egosuit_uuid": "E01-00-001",
+      "egogifts_uuid": [],
+      "egoweapon_uuid": "E03-00-001",
+      "stats": {
+        "fortitude": 2,
+        "prudence": 7,
+        "temperance": 34,
+        "justice": 1
+      },
+      "exstats": {
+        "critrate": 1.5,
+        "critchance": 0.5,
+        "break": 100,
+        "breakrate": 2,
+        "defense": 20,
+        "penetration": 5
+      },
+      "fear": 0,
+      "currency": 0,
+      "inventory": []
+    },
+    "983573649804107777": {
+      "userId": "983573649804107777",
+      "nickname": "Shapes Frostburn",
+      "hp": 60,
+      "sp": 50,
+      "egosuit_uuid": "E01-00-001",
+      "egogifts_uuid": [],
+      "egoweapon_uuid": "E03-00-001",
+      "stats": {
+        "fortitude": 1,
+        "prudence": 1,
+        "temperance": 9,
+        "justice": 1
+      },
+      "exstats": {
+        "critrate": 1.5,
+        "critchance": 0.5,
+        "break": 100,
+        "breakrate": 2,
+        "defense": 20,
+        "penetration": 5
+      },
+      "fear": 0,
+      "currency": 0,
+      "inventory": [],
+      "HP": 50
+    },
+    "411529506835136512": {
+      "userId": "411529506835136512",
+      "nickname": "Taylor",
+      "hp": 46,
+      "sp": 50,
+      "egosuit_uuid": "E01-00-001",
+      "egogifts_uuid": [],
+      "egoweapon_uuid": "E03-00-001",
+      "stats": {
+        "fortitude": 1,
+        "prudence": 1,
+        "temperance": 1,
+        "justice": 1
+      },
+      "exstats": {
+        "critrate": 1.5,
+        "critchance": 0.5,
+        "break": 100,
+        "breakrate": 2,
+        "defense": 20,
+        "penetration": 5
+      },
+      "fear": 0,
+      "currency": 0,
+      "inventory": []
+    },
+    "393504995741270017": {
+      "userId": "393504995741270017",
+      "nickname": "Caue",
+      "hp": 99999999997374,
+      "sp": 50,
+      "egosuit_uuid": "E01-00-001",
+      "egogifts_uuid": [],
+      "egoweapon_uuid": "E03-00-001",
+      "stats": {
+        "fortitude": 190,
+        "prudence": 178,
+        "temperance": 472,
+        "justice": 267
+      },
+      "exstats": {
+        "critrate": 1.5,
+        "critchance": 0.5,
+        "break": 100,
+        "breakrate": 2,
+        "defense": 20,
+        "penetration": 5
+      },
+      "fear": 0,
+      "currency": 0,
+      "inventory": []
+    },
+    "680888681036644441": {
+      "userId": "680888681036644441",
+      "nickname": "Sean W. Rosfield.",
+      "hp": 100007,
+      "sp": 50,
+      "egosuit_uuid": "E01-00-001",
+      "egogifts_uuid": [],
+      "egoweapon_uuid": "E03-00-001",
+      "stats": {
+        "fortitude": 1,
+        "prudence": 1,
+        "temperance": 17,
+        "justice": 1
+      },
+      "exstats": {
+        "critrate": 1.5,
+        "critchance": 0.5,
+        "break": 100,
+        "breakrate": 2,
+        "defense": 20,
+        "penetration": 5
+      },
+      "fear": 0,
+      "currency": 0,
+      "inventory": []
+    },
+    "468680118374629387": {
+      "userId": "468680118374629387",
+      "nickname": "Ryuko",
+      "hp": 50,
+      "sp": 50,
+      "egosuit_uuid": "E01-00-001",
+      "egogifts_uuid": [],
+      "egoweapon_uuid": "E03-00-001",
+      "stats": {
+        "fortitude": 10,
+        "prudence": 10,
+        "temperance": 50,
+        "justice": 35
+      },
+      "exstats": {
+        "critrate": 1.5,
+        "critchance": 0.5,
+        "break": 100,
+        "breakrate": 2,
+        "defense": 20,
+        "penetration": 5
+      },
+      "fear": 0,
+      "currency": 0,
+      "inventory": []
+    },
+    "681013286904528902": {
+      "userId": "681013286904528902",
+      "nickname": "Ninet",
+      "hp": 498,
+      "sp": 50,
+      "egosuit_uuid": "E01-00-001",
+      "egogifts_uuid": [],
+      "egoweapon_uuid": "E03-00-001",
+      "stats": {
+        "fortitude": 1,
+        "prudence": 4,
+        "temperance": 317,
+        "justice": 24
+      },
+      "exstats": {
+        "critrate": 1.5,
+        "critchance": 0.5,
+        "break": 100,
+        "breakrate": 2,
+        "defense": 20,
+        "penetration": 5
+      },
+      "fear": 0,
+      "currency": 0,
+      "inventory": [],
+      "fortitude": 10
+    },
+    "850143210188963870": {
+      "userId": "850143210188963870",
+      "nickname": "Manager",
+      "hp": 1e+27,
+      "sp": 1e+27,
+      "egosuit_uuid": "E01-00-001",
+      "egogifts_uuid": [],
+      "egoweapon_uuid": "E03-00-001",
+      "stats": {
+        "fortitude": 1,
+        "prudence": 1,
+        "temperance": 1,
+        "justice": 1
+      },
+      "exstats": {
+        "critrate": 1.5,
+        "critchance": 0.5,
+        "break": 100,
+        "breakrate": 2,
+        "defense": 20,
+        "penetration": 5
+      },
+      "fear": 0,
+      "currency": 0,
+      "inventory": []
+    },
+    "810447699220365343": {
+      "userId": "810447699220365343",
+      "nickname": "Dulci",
+      "hp": 40,
+      "sp": 50,
+      "egosuit_uuid": "E01-00-001",
+      "egogifts_uuid": [],
+      "egoweapon_uuid": "E03-00-001",
+      "stats": {
+        "fortitude": 2,
+        "prudence": 1,
+        "temperance": 4,
+        "justice": 1
+      },
+      "exstats": {
+        "critrate": 1.5,
+        "critchance": 0.5,
+        "break": 100,
+        "breakrate": 2,
+        "defense": 20,
+        "penetration": 5
+      },
+      "fear": 0,
+      "currency": 0,
+      "inventory": []
+    },
+    "1270370773005242434": {
+      "userId": "1270370773005242434",
+      "nickname": "Liam",
+      "hp": 50,
+      "sp": 50,
+      "egosuit_uuid": "E01-00-001",
+      "egogifts_uuid": [],
+      "egoweapon_uuid": "E03-00-001",
+      "stats": {
+        "fortitude": 1,
+        "prudence": 1,
+        "temperance": 1,
+        "justice": 1
+      },
+      "exstats": {
+        "critrate": 1.5,
+        "critchance": 0.5,
+        "break": 100,
+        "breakrate": 2,
+        "defense": 20,
+        "penetration": 5
+      },
+      "fear": 0,
+      "currency": 0,
+      "inventory": []
+    }
+  }
+}

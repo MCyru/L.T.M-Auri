@@ -1,0 +1,30 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "shiruagate",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/builders": "^1.9.0",
+    "@discordjs/collection": "^2.1.1",
+    "@discordjs/rest": "^2.4.0",
+    "@discordjs/util": "^1.1.1",
+    "@sapphire/discord.js-utilities": "^7.3.1",
+    "@types/express": "^5.0.0",
+    "@types/node": "^18.0.6",
+    "discord-api-types": "^0.37.114",
+    "discord.js": "^14.17.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "stream": "^0.0.3"
+  },
+  "devDependencies": {
+    "node": "^16.20.2"
+  },
+  "description": ""
+}
