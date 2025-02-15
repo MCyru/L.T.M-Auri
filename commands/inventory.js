@@ -1,5 +1,5 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
-const { MessageEmbed } = require('discord.js');
+const { EmbedBuilder } = require('discord.js');
 const fs = require('fs');
 const path = require('path');
 const egoDataPath = path.join(__dirname, '../data/ego.json');
@@ -32,7 +32,15 @@ module.exports = {
         .addSubcommand(subcommand =>
             subcommand
                 .setName('unequip')
-                .setDescription('Unequip the currently equipped item')),
+                .setDescription('Unequip the currently equipped item'))
+        .addSubcommand(subcommand =>
+            subcommand
+                .setName('inspect')
+                .setDescription('Inspect an item from your inventory')
+                .addStringOption(option => 
+                    option.setName('item')
+                        .setDescription('The item to inspect')
+                        .setRequired(true))),
     async execute(interaction) {
         const userId = interaction.user.id;
 
@@ -57,21 +65,32 @@ module.exports = {
             const userInventory = inventoryData[userId].items;
             const equippedItem = inventoryData[userId].equipped;
 
-            const embed = new MessageEmbed()
+            const embed = new EmbedBuilder()
                 .setTitle(`${interaction.user.username}'s Inventory`)
-                .setDescription(userInventory.length ? userInventory.join(', ') : 'Your inventory is empty.')
-                .addField('Equipped Item', equippedItem ? equippedItem : 'None', true);
+                    .setDescription(userInventory.length ? userInventory.map(item => item.name).join(', ') : 'Your inventory is empty.');
+    
+                if (equippedItem) {
+                    embed.addFields({ name: 'Equipped Items', value: Object.values(equippedItem).map(item => item.name).join(', '), inline: false });
+                }
+
+            const equippedItems = inventoryData[userId].equipped || {};
+            for (const [slot, item] of Object.entries(equippedItems)) {
+                embed.addFields({ name: `Equipped ${slot}`, value: item ? item.name : 'None', inline: true });
+            }
 
             await interaction.reply({ embeds: [embed] });
         } else if (subcommand === 'equip') {
             const itemToEquip = interaction.options.getString('item');
+            const item = inventoryData[userId].items.find(i => i.name === itemToEquip);
 
-            if (!inventoryData[userId].items.includes(itemToEquip)) {
+            if (!item) {
                 await interaction.reply(`You don't have the item "${itemToEquip}" in your inventory.`);
                 return;
             }
 
-            inventoryData[userId].equipped = itemToEquip;
+            const slot = item.type + (item.sub_type ? `_${item.sub_type}` : '');
+            inventoryData[userId].equipped = inventoryData[userId].equipped || {};
+            inventoryData[userId].equipped[slot] = item;
 
             // Save inventory data
             fs.writeFileSync(inventoryPath, JSON.stringify(inventoryData, null, 2));
@@ -84,6 +103,25 @@ module.exports = {
             fs.writeFileSync(inventoryPath, JSON.stringify(inventoryData, null, 2));
 
             await interaction.reply(`You have unequipped your item. Default item "${inventoryData[userId].equipped}" is now equipped.`);
+        } else if (subcommand === 'inspect') {
+            const itemToInspect = interaction.options.getString('item');
+            const item = inventoryData[userId].items.find(i => i.name === itemToInspect);
+
+            if (!item) {
+                await interaction.reply(`You don't have the item "${itemToInspect}" in your inventory.`);
+                return;
+            }
+
+            const embed = new EmbedBuilder()
+                .setTitle(`Inspecting ${item.name}`)
+                .addFields(
+                    { name: 'Name', value: item.name, inline: true },
+                    { name: 'Type', value: item.type, inline: true },
+                    { name: 'Subtype', value: item.sub_type || 'None', inline: true },
+                    { name: 'Attributes', value: JSON.stringify(item.attributes, null, 2), inline: false }
+                );
+
+            await interaction.reply({ embeds: [embed] });
         }
     }
 };

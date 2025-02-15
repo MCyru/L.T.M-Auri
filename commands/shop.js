@@ -1,4 +1,4 @@
-const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
+const { SlashCommandBuilder, MessageEmbed } = require('discord.js');
 const { readDatabase, writeDatabase } = require('../database.js');
 
 module.exports = {
@@ -61,7 +61,7 @@ module.exports = {
         writeDatabase('abno.json', dbAbno);
         writeDatabase('inventory.json', dbInventory);
 
-        const embed = new EmbedBuilder()
+        const embed = new MessageEmbed()
             .setTitle(`Shop - ${abno.nickname}`)
             .setDescription(`You have successfully bought ${item.name}.`)
             .addFields(

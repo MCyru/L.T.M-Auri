@@ -1,122 +1,531 @@
 {
-    "832410987385585705": {
-        "items": [
-            {
-                "item_id": "E03-00-001",
-                "name": "Baton",
-                "type": "weapon",
-                "attributes": {
-                    "damage": 2,
-                    "damageType": "red",
-                    "tier": 1
-                }
-            },
-            {
-                "item_id": "E01-00-001",
-                "name": "Suit",
-                "type": "armor",
-                "attributes": {
-                    "tier": 1,
-                    "resistance": {
-                        "white": 1,
-                        "red": 1,
-                        "black": 1,
-                        "pale": 1
-                    }
-                }
-            },
-            {
-                "item_id": "E02-00-001",
-                "name": "Pendant of sin",
-                "type": "accessory",
-                "attributes": {
-                    "fortitude": 2,
-                    "prudence": 2,
-                    "temperance": 2,
-                    "justice": 2
-                }
-            }
-        ],
-        "equipped": null
-    },
-    "997884684560252948": {
-        "items": [
-            {
-                "item_id": "E03-00-001",
-                "name": "Baton",
-                "type": "weapon",
-                "attributes": {
-                    "damage": 2,
-                    "damageType": "red",
-                    "tier": 1
-                }
-            },
-            {
-                "item_id": "E01-00-001",
-                "name": "Suit",
-                "type": "armor",
-                "attributes": {
-                    "tier": 1,
-                    "resistance": {
-                        "white": 1,
-                        "red": 1,
-                        "black": 1,
-                        "pale": 1
-                    }
-                }
-            },
-            {
-                "item_id": "E02-00-001",
-                "name": "Pendant of sin",
-                "type": "accessory",
-                "attributes": {
-                    "fortitude": 2,
-                    "prudence": 2,
-                    "temperance": 2,
-                    "justice": 2
-                }
-            }
-        ],
-        "equipped": null
-    },
-    "983573649804107777": {
-        "items": [
-            {
-                "item_id": "E03-00-001",
-                "name": "Baton",
-                "type": "weapon",
-                "attributes": {
-                    "damage": 2,
-                    "damageType": "red",
-                    "tier": 1
-                }
-            },
-            {
-                "item_id": "E01-00-001",
-                "name": "Suit",
-                "type": "armor",
-                "attributes": {
-                    "tier": 1,
-                    "resistance": {
-                        "white": 1,
-                        "red": 1,
-                        "black": 1,
-                        "pale": 1
-                    }
-                }
-            },
-            {
-                "item_id": "E02-00-001",
-                "name": "Pendant of sin",
-                "type": "accessory",
-                "attributes": {
-                    "fortitude": 2,
-                    "prudence": 2,
-                    "temperance": 2,
-                    "justice": 2
-                }
-            }
-        ],
-        "equipped": null
+  "832410987385585705": {
+    "items": [
+      {
+        "item_id": "E03-00-001",
+        "name": "Baton",
+        "type": "weapon",
+        "attributes": {
+          "damage": 2,
+          "damageType": "red",
+          "tier": 1
+        }
+      },
+      {
+        "item_id": "E01-00-001",
+        "name": "Suit",
+        "type": "armor",
+        "attributes": {
+          "tier": 1,
+          "resistance": {
+            "white": 1,
+            "red": 1,
+            "black": 1,
+            "pale": 1
+          }
+        }
+      },
+      {
+        "item_id": "E02-00-001",
+        "name": "Pendant of sin",
+        "type": "accessory",
+        "sub_type": "necklace",
+        "attributes": {
+          "fortitude": 2,
+          "prudence": 2,
+          "temperance": 2,
+          "justice": 2
+        }
+      }
+    ],
+    "equipped": {
+      "weapon": {
+        "item_id": "E03-00-001",
+        "name": "Baton",
+        "type": "weapon",
+        "attributes": {
+          "damage": 2,
+          "damageType": "red",
+          "tier": 1
+        }
+      },
+      "armor": {
+        "item_id": "E01-00-001",
+        "name": "Suit",
+        "type": "armor",
+        "attributes": {
+          "tier": 1,
+          "resistance": {
+            "white": 1,
+            "red": 1,
+            "black": 1,
+            "pale": 1
+          }
+        }
+      },
+      "accessory_necklace": {
+        "item_id": "E02-00-001",
+        "name": "Pendant of sin",
+        "type": "accessory",
+        "sub_type": "necklace",
+        "attributes": {
+          "fortitude": 2,
+          "prudence": 2,
+          "temperance": 2,
+          "justice": 2
+        }
+      }
     }
+  },
+  "997884684560252948": {
+    "items": [
+      {
+        "item_id": "E03-00-001",
+        "name": "Baton",
+        "type": "weapon",
+        "attributes": {
+          "damage": 2,
+          "damageType": "red",
+          "tier": 1
+        }
+      },
+      {
+        "item_id": "E01-00-001",
+        "name": "Suit",
+        "type": "armor",
+        "attributes": {
+          "tier": 1,
+          "resistance": {
+            "white": 1,
+            "red": 1,
+            "black": 1,
+            "pale": 1
+          }
+        }
+      },
+      {
+        "item_id": "E02-00-001",
+        "name": "Pendant of sin",
+        "type": "accessory",
+        "sub_type": "necklace",
+        "attributes": {
+          "fortitude": 2,
+          "prudence": 2,
+          "temperance": 2,
+          "justice": 2
+        }
+      }
+    ],
+    "equipped": null
+  },
+  "831684049944576021": {
+    "items": [
+      {
+        "item_id": "E03-00-001",
+        "name": "Baton",
+        "type": "weapon",
+        "attributes": {
+          "damage": 2,
+          "damageType": "red",
+          "tier": 1
+        }
+      },
+      {
+        "item_id": "E01-00-001",
+        "name": "Suit",
+        "type": "armor",
+        "attributes": {
+          "tier": 1,
+          "resistance": {
+            "white": 1,
+            "red": 1,
+            "black": 1,
+            "pale": 1
+          }
+        }
+      },
+      {
+        "item_id": "E02-00-001",
+        "name": "Pendant of sin",
+        "type": "accessory",
+        "sub_type": "necklace",
+        "attributes": {
+          "fortitude": 2,
+          "prudence": 2,
+          "temperance": 2,
+          "justice": 2
+        }
+      }
+    ],
+    "equipped": null
+  },
+  "983573649804107777": {
+    "items": [
+      {
+        "item_id": "E03-00-001",
+        "name": "Baton",
+        "type": "weapon",
+        "attributes": {
+          "damage": 2,
+          "damageType": "red",
+          "tier": 1
+        }
+      },
+      {
+        "item_id": "E01-00-001",
+        "name": "Suit",
+        "type": "armor",
+        "attributes": {
+          "tier": 1,
+          "resistance": {
+            "white": 1,
+            "red": 1,
+            "black": 1,
+            "pale": 1
+          }
+        }
+      },
+      {
+        "item_id": "E02-00-001",
+        "name": "Pendant of sin",
+        "type": "accessory",
+        "sub_type": "necklace",
+        "attributes": {
+          "fortitude": 2,
+          "prudence": 2,
+          "temperance": 2,
+          "justice": 2
+        }
+      }
+    ],
+    "equipped": null
+  },
+  "411529506835136512": {
+    "items": [
+      {
+        "item_id": "E03-00-001",
+        "name": "Baton",
+        "type": "weapon",
+        "attributes": {
+          "damage": 2,
+          "damageType": "red",
+          "tier": 1
+        }
+      },
+      {
+        "item_id": "E01-00-001",
+        "name": "Suit",
+        "type": "armor",
+        "attributes": {
+          "tier": 1,
+          "resistance": {
+            "white": 1,
+            "red": 1,
+            "black": 1,
+            "pale": 1
+          }
+        }
+      },
+      {
+        "item_id": "E02-00-001",
+        "name": "Pendant of sin",
+        "type": "accessory",
+        "sub_type": "necklace",
+        "attributes": {
+          "fortitude": 2,
+          "prudence": 2,
+          "temperance": 2,
+          "justice": 2
+        }
+      }
+    ],
+    "equipped": null
+  },
+  "393504995741270017": {
+    "items": [
+      {
+        "item_id": "E03-00-001",
+        "name": "Baton",
+        "type": "weapon",
+        "attributes": {
+          "damage": 2,
+          "damageType": "red",
+          "tier": 1
+        }
+      },
+      {
+        "item_id": "E01-00-001",
+        "name": "Suit",
+        "type": "armor",
+        "attributes": {
+          "tier": 1,
+          "resistance": {
+            "white": 1,
+            "red": 1,
+            "black": 1,
+            "pale": 1
+          }
+        }
+      },
+      {
+        "item_id": "E02-00-001",
+        "name": "Pendant of sin",
+        "type": "accessory",
+        "sub_type": "necklace",
+        "attributes": {
+          "fortitude": 2,
+          "prudence": 2,
+          "temperance": 2,
+          "justice": 2
+        }
+      }
+    ],
+    "equipped": null
+  },
+  "680888681036644441": {
+    "items": [
+      {
+        "item_id": "E03-00-001",
+        "name": "Baton",
+        "type": "weapon",
+        "attributes": {
+          "damage": 2,
+          "damageType": "red",
+          "tier": 1
+        }
+      },
+      {
+        "item_id": "E01-00-001",
+        "name": "Suit",
+        "type": "armor",
+        "attributes": {
+          "tier": 1,
+          "resistance": {
+            "white": 1,
+            "red": 1,
+            "black": 1,
+            "pale": 1
+          }
+        }
+      },
+      {
+        "item_id": "E02-00-001",
+        "name": "Pendant of sin",
+        "type": "accessory",
+        "sub_type": "necklace",
+        "attributes": {
+          "fortitude": 2,
+          "prudence": 2,
+          "temperance": 2,
+          "justice": 2
+        }
+      }
+    ],
+    "equipped": null
+  },
+  "468680118374629387": {
+    "items": [
+      {
+        "item_id": "E03-00-001",
+        "name": "Baton",
+        "type": "weapon",
+        "attributes": {
+          "damage": 2,
+          "damageType": "red",
+          "tier": 1
+        }
+      },
+      {
+        "item_id": "E01-00-001",
+        "name": "Suit",
+        "type": "armor",
+        "attributes": {
+          "tier": 1,
+          "resistance": {
+            "white": 1,
+            "red": 1,
+            "black": 1,
+            "pale": 1
+          }
+        }
+      },
+      {
+        "item_id": "E02-00-001",
+        "name": "Pendant of sin",
+        "type": "accessory",
+        "sub_type": "necklace",
+        "attributes": {
+          "fortitude": 2,
+          "prudence": 2,
+          "temperance": 2,
+          "justice": 2
+        }
+      }
+    ],
+    "equipped": null
+  },
+  "681013286904528902": {
+    "items": [
+      {
+        "item_id": "E03-00-001",
+        "name": "Baton",
+        "type": "weapon",
+        "attributes": {
+          "damage": 2,
+          "damageType": "red",
+          "tier": 1
+        }
+      },
+      {
+        "item_id": "E01-00-001",
+        "name": "Suit",
+        "type": "armor",
+        "attributes": {
+          "tier": 1,
+          "resistance": {
+            "white": 1,
+            "red": 1,
+            "black": 1,
+            "pale": 1
+          }
+        }
+      },
+      {
+        "item_id": "E02-00-001",
+        "name": "Pendant of sin",
+        "type": "accessory",
+        "sub_type": "necklace",
+        "attributes": {
+          "fortitude": 2,
+          "prudence": 2,
+          "temperance": 2,
+          "justice": 2
+        }
+      }
+    ],
+    "equipped": null
+  },
+  "850143210188963870": {
+    "items": [
+      {
+        "item_id": "E03-00-001",
+        "name": "Baton",
+        "type": "weapon",
+        "attributes": {
+          "damage": 2,
+          "damageType": "red",
+          "tier": 1
+        }
+      },
+      {
+        "item_id": "E01-00-001",
+        "name": "Suit",
+        "type": "armor",
+        "attributes": {
+          "tier": 1,
+          "resistance": {
+            "white": 1,
+            "red": 1,
+            "black": 1,
+            "pale": 1
+          }
+        }
+      },
+      {
+        "item_id": "E02-00-001",
+        "name": "Pendant of sin",
+        "type": "accessory",
+        "sub_type": "necklace",
+        "attributes": {
+          "fortitude": 2,
+          "prudence": 2,
+          "temperance": 2,
+          "justice": 2
+        }
+      }
+    ],
+    "equipped": null
+  },
+  "810447699220365343": {
+    "items": [
+      {
+        "item_id": "E03-00-001",
+        "name": "Baton",
+        "type": "weapon",
+        "attributes": {
+          "damage": 2,
+          "damageType": "red",
+          "tier": 1
+        }
+      },
+      {
+        "item_id": "E01-00-001",
+        "name": "Suit",
+        "type": "armor",
+        "attributes": {
+          "tier": 1,
+          "resistance": {
+            "white": 1,
+            "red": 1,
+            "black": 1,
+            "pale": 1
+          }
+        }
+      },
+      {
+        "item_id": "E02-00-001",
+        "name": "Pendant of sin",
+        "type": "accessory",
+        "sub_type": "necklace",
+        "attributes": {
+          "fortitude": 2,
+          "prudence": 2,
+          "temperance": 2,
+          "justice": 2
+        }
+      }
+    ],
+    "equipped": null
+  },
+  "1270370773005242434": {
+    "items": [
+      {
+        "item_id": "E03-00-001",
+        "name": "Baton",
+        "type": "weapon",
+        "attributes": {
+          "damage": 2,
+          "damageType": "red",
+          "tier": 1
+        }
+      },
+      {
+        "item_id": "E01-00-001",
+        "name": "Suit",
+        "type": "armor",
+        "attributes": {
+          "tier": 1,
+          "resistance": {
+            "white": 1,
+            "red": 1,
+            "black": 1,
+            "pale": 1
+          }
+        }
+      },
+      {
+        "item_id": "E02-00-001",
+        "name": "Pendant of sin",
+        "type": "accessory",
+        "sub_type": "necklace",
+        "attributes": {
+          "fortitude": 2,
+          "prudence": 2,
+          "temperance": 2,
+          "justice": 2
+        }
+      }
+    ],
+    "equipped": null
+  }
 }
