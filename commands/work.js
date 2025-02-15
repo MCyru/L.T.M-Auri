@@ -32,8 +32,11 @@ module.exports = {
         }
 
         const user = dbUsers.users[userId];
-        const abno = Object.values(dbAbno.abnos).find(a => a.uuid === abnoName);
-
+        let abno = Object.values(dbAbno.abnos).find(a => a.uuid === abnoName);
+        if (!abno) {
+            abno = Object.values(dbAbno.abnos).find(a => a.nickname.toLowerCase() === abnoName.toLowerCase());
+        }
+        
         if (!abno) {
             return interaction.reply('Abnormality not found.');
         }
