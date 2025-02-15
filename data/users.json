@@ -3,13 +3,13 @@
     "832410987385585705": {
       "userId": "832410987385585705",
       "nickname": "Serene Hoshiai",
-      "hp": 39,
+      "hp": 32,
       "sp": 50,
       "egosuit_uuid": "E01-00-001",
       "egogifts_uuid": [],
       "egoweapon_uuid": "E03-00-001",
       "stats": {
-        "fortitude": 1,
+        "fortitude": 3,
         "prudence": 1,
         "temperance": 4,
         "justice": 100000
