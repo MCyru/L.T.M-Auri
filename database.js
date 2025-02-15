@@ -13,9 +13,16 @@ function writeDatabase(filename, data) {
     fs.writeFileSync(filePath, JSON.stringify(data, null, 2));
 }
 
+function queryDatabase(filename, query) {
+    const data = readDatabase(filename);
+    return data.filter(query);
+}
+
+
 module.exports = {
     readDatabase,
-    writeDatabase
+    writeDatabase,
+    queryDatabase
 };
 
 //const { readDatabase, writeDatabase } = require('../database');
@@ -25,3 +32,6 @@ module.exports = {
 
 // Writing to a specific JSON file
 // writeDatabase('user.json', userData);
+
+// Querying a specific JSON file
+// const activeUsers = queryDatabase('users.json', user => user.active); this doesnt work btw, mock example
