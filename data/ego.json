@@ -3,6 +3,93 @@
     "02-00-001": {
         "uuid": "E02-00-001",
         "name": "Pendant of sin",
+        "type": "gift",
+        "sub_type": "normal",
+        "description": "The cracha of the company.",
+        "acquisitionChance": 0.2,
+        "stats": {
+            "fortitude": 2,
+            "prudence": 2,
+            "temperance": 2,
+            "justice": 2
+        }
+    },
+    "02-01-001": {
+        "uuid": "E02-01-001",
+        "name": "Sync Zayin Test",
+        "type": "gift",
+        "sub_type": "normal",
+        "description": "Test.",
+        "acquisitionChance": 0.2,
+        "stats": {
+            "fortitude": 2,
+            "prudence": 2,
+            "temperance": 2,
+            "justice": 2
+        }
+    },
+    "02-01-002": {
+        "uuid": "E02-00-002",
+        "name": "normal Zayin Test",
+        "type": "gift",
+        "sub_type": "normal",
+        "description": "Test.",
+        "acquisitionChance": 0.2,
+        "stats": {
+            "fortitude": 2,
+            "prudence": 2,
+            "temperance": 2,
+            "justice": 2
+        }
+    },
+    "02-01-003": {
+        "uuid": "E02-00-003",
+        "name": "normal Zayin Test2",
+        "type": "gift",
+        "sub_type": "normal",
+        "description": "Test.",
+        "acquisitionChance": 0.2,
+        "stats": {
+            "fortitude": 2,
+            "prudence": 2,
+            "temperance": 2,
+            "justice": 2
+        }
+    },
+    "02-01-004": {
+        "uuid": "E02-00-004",
+        "name": "normal Zayin Test3",
+        "type": "gift",
+        "sub_type": "normal",
+        "description": "Test.",
+        "acquisitionChance": 0.2,
+        "stats": {
+            "fortitude": 2,
+            "prudence": 2,
+            "temperance": 2,
+            "justice": 2
+        }
+    },
+    "02-02-001": {
+        "uuid": "E02-02-001",
+        "name": "Zayin Fusion Test",
+        "type": "gift",
+        "sub_type": "normal",
+        "description": "Test.",
+        "acquisitionChance": 0.2,
+        "stats": {
+            "fortitude": 2,
+            "prudence": 2,
+            "temperance": 2,
+            "justice": 2
+        }
+    },
+    "02-03-001": {
+        "uuid": "E02-03-001",
+        "name": "Zayin PSync Test",
+        "type": "gift",
+        "sub_type": "normal",
+        "description": "Test.",
         "acquisitionChance": 0.2,
         "stats": {
             "fortitude": 2,
@@ -15,7 +102,10 @@
   "egoweapons" :{
     "03-00-001": {
         "uuid": "E03-00-001",
-        "name": "Baton",
+        "name": "Zayin Padronized Baton",
+        "type": "weapon",
+        "sub_type": "normal",
+        "description": "Reusable and dispensable ego baton for rookie agents.",
         "damage": 2,
         "damageType": "red",
         "tier": 1
@@ -24,13 +114,16 @@
   "egosuits" :{
     "01-00-001": {
         "uuid": "E01-00-001",
-        "name": "Suit",
+        "name": "Zayin Padronized Suit",
+        "description": "Standard company uniform.",
+        "type": "suit",
+        "sub_type": "normal",
         "tier": 1,
         "resistance": {
-            "white": 1,
-            "red": 1,
-            "black": 1,
-            "pale": 1
+            "white": 1.0,
+            "red": 1.0,
+            "black": 1.0,
+            "pale": 1.0
         }
     }
   }

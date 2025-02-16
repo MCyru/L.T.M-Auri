@@ -3,16 +3,16 @@
     "832410987385585705": {
       "userId": "832410987385585705",
       "nickname": "Serene Hoshiai",
-      "hp": 28,
+      "hp": 50,
       "sp": 50,
       "egosuit_uuid": "E01-00-001",
       "egogifts_uuid": [],
       "egoweapon_uuid": "E03-00-001",
       "stats": {
-        "fortitude": 6,
+        "fortitude": 1,
         "prudence": 1,
-        "temperance": 4,
-        "justice": 100000
+        "temperance": 1,
+        "justice": 1
       },
       "exstats": {
         "critrate": 1.5,
@@ -29,7 +29,7 @@
     "997884684560252948": {
       "userId": "997884684560252948",
       "nickname": "\"Mad\"",
-      "hp": 1e+32,
+      "hp": 50,
       "sp": 50,
       "egosuit_uuid": "E01-00-001",
       "egogifts_uuid": [],
@@ -37,8 +37,8 @@
       "stats": {
         "fortitude": 1,
         "prudence": 1,
-        "temperance": 179,
-        "justice": 5
+        "temperance": 1,
+        "justice": 1
       },
       "exstats": {
         "critrate": 1.5,
@@ -56,15 +56,15 @@
     "831684049944576021": {
       "userId": "831684049944576021",
       "nickname": "Oliver",
-      "hp": 99999880,
+      "hp": 50,
       "sp": 50,
       "egosuit_uuid": "E01-00-001",
       "egogifts_uuid": [],
       "egoweapon_uuid": "E03-00-001",
       "stats": {
-        "fortitude": 2,
-        "prudence": 7,
-        "temperance": 34,
+        "fortitude": 1,
+        "prudence": 1,
+        "temperance": 1,
         "justice": 1
       },
       "exstats": {
@@ -82,7 +82,7 @@
     "983573649804107777": {
       "userId": "983573649804107777",
       "nickname": "Shapes Frostburn",
-      "hp": 60,
+      "hp": 50,
       "sp": 50,
       "egosuit_uuid": "E01-00-001",
       "egogifts_uuid": [],
@@ -90,7 +90,7 @@
       "stats": {
         "fortitude": 1,
         "prudence": 1,
-        "temperance": 9,
+        "temperance": 1,
         "justice": 1
       },
       "exstats": {
@@ -109,7 +109,7 @@
     "411529506835136512": {
       "userId": "411529506835136512",
       "nickname": "Taylor",
-      "hp": 46,
+      "hp": 50,
       "sp": 50,
       "egosuit_uuid": "E01-00-001",
       "egogifts_uuid": [],
@@ -135,16 +135,16 @@
     "393504995741270017": {
       "userId": "393504995741270017",
       "nickname": "Caue",
-      "hp": 99999999997374,
+      "hp": 50,
       "sp": 50,
       "egosuit_uuid": "E01-00-001",
       "egogifts_uuid": [],
       "egoweapon_uuid": "E03-00-001",
       "stats": {
-        "fortitude": 190,
-        "prudence": 178,
-        "temperance": 472,
-        "justice": 267
+        "fortitude": 1,
+        "prudence": 1,
+        "temperance": 1,
+        "justice": 1
       },
       "exstats": {
         "critrate": 1.5,
@@ -161,7 +161,7 @@
     "680888681036644441": {
       "userId": "680888681036644441",
       "nickname": "Sean W. Rosfield.",
-      "hp": 100007,
+      "hp": 50,
       "sp": 50,
       "egosuit_uuid": "E01-00-001",
       "egogifts_uuid": [],
@@ -169,7 +169,7 @@
       "stats": {
         "fortitude": 1,
         "prudence": 1,
-        "temperance": 17,
+        "temperance": 1,
         "justice": 1
       },
       "exstats": {
@@ -193,10 +193,10 @@
       "egogifts_uuid": [],
       "egoweapon_uuid": "E03-00-001",
       "stats": {
-        "fortitude": 10,
-        "prudence": 10,
-        "temperance": 50,
-        "justice": 35
+        "fortitude": 1,
+        "prudence": 1,
+        "temperance": 1,
+        "justice": 1
       },
       "exstats": {
         "critrate": 1.5,
@@ -213,16 +213,16 @@
     "681013286904528902": {
       "userId": "681013286904528902",
       "nickname": "Ninet",
-      "hp": 498,
+      "hp": 50,
       "sp": 50,
       "egosuit_uuid": "E01-00-001",
       "egogifts_uuid": [],
       "egoweapon_uuid": "E03-00-001",
       "stats": {
         "fortitude": 1,
-        "prudence": 4,
-        "temperance": 317,
-        "justice": 24
+        "prudence": 1,
+        "temperance": 1,
+        "justice": 1
       },
       "exstats": {
         "critrate": 1.5,
@@ -240,8 +240,8 @@
     "850143210188963870": {
       "userId": "850143210188963870",
       "nickname": "Manager",
-      "hp": 1e+27,
-      "sp": 1e+27,
+      "hp": 50,
+      "sp": 50,
       "egosuit_uuid": "E01-00-001",
       "egogifts_uuid": [],
       "egoweapon_uuid": "E03-00-001",
@@ -266,15 +266,15 @@
     "810447699220365343": {
       "userId": "810447699220365343",
       "nickname": "Dulci",
-      "hp": 40,
+      "hp": 50,
       "sp": 50,
       "egosuit_uuid": "E01-00-001",
       "egogifts_uuid": [],
       "egoweapon_uuid": "E03-00-001",
       "stats": {
-        "fortitude": 2,
+        "fortitude": 1,
         "prudence": 1,
-        "temperance": 4,
+        "temperance": 1,
         "justice": 1
       },
       "exstats": {
