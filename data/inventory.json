@@ -27,27 +27,34 @@
       },
       {
         "item_id": "02-03-001"
+      },
+      {
+        "item_id": "02-04-001"
       }
     ],
     "equipped": {
-      "suit": {
-        "item_id": "01-00-001"
-      },
       "weapon": {
         "item_id": "03-00-001"
       },
-      "gifts": [],
-      "gifts_normal_0": {
-        "item_id": "02-00-001"
+      "gifts": {
+        "gifts_normal_1": {
+          "item_id": "02-01-001"
+        },
+        "gifts_normal_3": {
+          "item_id": "02-01-003"
+        },
+        "gifts_normal_4": {
+          "item_id": "02-00-001"
+        },
+        "psync": {
+          "item_id": "02-04-001"
+        },
+        "gifts_fusion_4": {
+          "item_id": "02-02-001"
+        }
       },
-      "gifts_normal_1": {
-        "item_id": "02-01-001"
-      },
-      "gifts_normal_3": {
-        "item_id": "02-01-003"
-      },
-      "gifts_normal_4": {
-        "item_id": "02-01-002"
+      "suit": {
+        "item_id": "01-00-001"
       }
     }
   }

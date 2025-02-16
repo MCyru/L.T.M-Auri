@@ -26,6 +26,7 @@ module.exports = {
         const dbUsers = readDatabase('users.json');
         const dbAbno = readDatabase('abno.json');
         const dbEgo = readDatabase('ego.json');
+        const dbInv = readDatabase('inventory.json');
 
         if (!dbUsers.users[userId]) {
             return interaction.reply('You are not in the database.');
@@ -67,6 +68,7 @@ module.exports = {
         }
 
         // Calculate work results
+        const giftsboost = dbInv.equipped.gifts[userId] || { gifts: 0 }; // will fix this later so that gifts boost count
         const baseProbability = abno.baseProbability[workType];
         const statValue = user.stats.temperance;
         const statBonus = statValue * 0.2;
@@ -183,7 +185,6 @@ module.exports = {
             { name: 'Agent HP/SP Left', value: `HP: ${user.hp}, SP: ${user.sp}`, inline: true },
             { name: 'Damage Type', value: `${abno.damageType}`, inline: true },
             { name: 'Stat Increase', value: `${statIncrease}`, inline: true },
-            { name: 'Status', value: `${msng}`, inline: true },
             )
             .setColor(workResult === 'Good' ? '#00FF00' : workResult === 'Normal' ? '#FFFF00' : '#FF0000'); // Use hex color codes
 

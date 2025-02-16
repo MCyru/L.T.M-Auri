@@ -15,10 +15,10 @@
         }
     },
     "02-01-001": {
-        "uuid": "E02-01-001",
+        "uuid": "E02-02-001",
         "name": "Sync Zayin Test",
         "type": "gift",
-        "sub_type": "normal",
+        "sub_type": "sync",
         "description": "Test.",
         "acquisitionChance": 0.2,
         "stats": {
@@ -71,10 +71,10 @@
         }
     },
     "02-02-001": {
-        "uuid": "E02-02-001",
+        "uuid": "E02-03-001",
         "name": "Zayin Fusion Test",
         "type": "gift",
-        "sub_type": "normal",
+        "sub_type": "fusion",
         "description": "Test.",
         "acquisitionChance": 0.2,
         "stats": {
@@ -84,11 +84,11 @@
             "justice": 2
         }
     },
-    "02-03-001": {
-        "uuid": "E02-03-001",
+    "02-04-001": {
+        "uuid": "E02-04-001",
         "name": "Zayin PSync Test",
         "type": "gift",
-        "sub_type": "normal",
+        "sub_type": "psync",
         "description": "Test.",
         "acquisitionChance": 0.2,
         "stats": {

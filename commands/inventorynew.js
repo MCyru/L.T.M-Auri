@@ -32,7 +32,15 @@ module.exports = {
                 .addStringOption(option => 
                     option.setName('item')
                         .setDescription('The name of the item to unequip')
-                        .setRequired(true))),
+                        .setRequired(true))
+                .addStringOption(option =>
+                    option.setName('itemtype')
+                        .setDescription('The type of item to unequip')
+                        .setRequired(true)
+                        .addChoices(
+                            { name: 'Weapon or Suit', value: 'ws' },
+                            { name: 'Gifts', value: 'gifts' }
+                        ))),
     async execute(interaction) {
         const userId = interaction.user.id;
         const dbInventory = readDatabase('inventory.json');
@@ -64,7 +72,12 @@ module.exports = {
             const equippedItems = dbInventory[userId].equipped;
             const equippedWeapons = Object.values(equippedItems).filter(item => dbEgo.egoweapons[item.item_id]).map(item => dbEgo.egoweapons[item.item_id].name);
             const equippedSuits = Object.values(equippedItems).filter(item => dbEgo.egosuits[item.item_id]).map(item => dbEgo.egosuits[item.item_id].name);
-            const equippedGifts = Object.values(equippedItems).filter(item => dbEgo.egogifts[item.item_id]).map(item => dbEgo.egogifts[item.item_id].name);
+            
+            const equippedNormalGifts = Object.values(equippedItems.gifts).filter(item => dbEgo.egogifts[item.item_id] && dbEgo.egogifts[item.item_id].sub_type === 'normal').map(item => dbEgo.egogifts[item.item_id].name);
+            const equippedPSyncGifts = Object.values(equippedItems.gifts).filter(item => dbEgo.egogifts[item.item_id] && dbEgo.egogifts[item.item_id].sub_type === 'psync').map(item => dbEgo.egogifts[item.item_id].name);
+            const equippedFusionGifts = Object.values(equippedItems.gifts).filter(item => dbEgo.egogifts[item.item_id] && dbEgo.egogifts[item.item_id].sub_type === 'fusion').map(item => dbEgo.egogifts[item.item_id].name);
+            const equippedSyncGifts = Object.values(equippedItems.gifts).filter(item => dbEgo.egogifts[item.item_id] && dbEgo.egogifts[item.item_id].sub_type === 'sync').map(item => dbEgo.egogifts[item.item_id].name);
+
 
             const embed = new EmbedBuilder()
                 .setTitle(`${characterName}'s Inventory`)
@@ -72,11 +85,23 @@ module.exports = {
                 .addFields(
                     { name: 'Weapons', value: weapons.join(', ') || 'None', inline: true },
                     { name: 'Suits', value: suits.join(', ') || 'None', inline: true },
-                    { name: 'Gifts', value: gifts.join(', ') || 'None', inline: true },
+                    { name: 'Gifts', value: gifts.join(', ') || 'None', inline: false },
                     { name: 'Equipped Weapons', value: equippedWeapons.join(', ') || 'None', inline: true },
-                    { name: 'Equipped Suits', value: equippedSuits.join(', ') || 'None', inline: true },
-                    { name: 'Equipped Gifts', value: equippedGifts.join(', ') || 'None', inline: true }
+                    { name: 'Equipped Suits', value: equippedSuits.join(', ') || 'None', inline: true }
                 );
+
+            if (equippedNormalGifts.length > 0) {
+                embed.addFields({ name: 'Equipped Normal Gifts', value: equippedNormalGifts.join(', '), inline: true });
+            }
+            if (equippedPSyncGifts.length > 0) {
+                embed.addFields({ name: 'Equipped PSync Gifts', value: equippedPSyncGifts.join(', '), inline: true });
+            }
+            if (equippedFusionGifts.length > 0) {
+                embed.addFields({ name: 'Equipped Fusion Gifts', value: equippedFusionGifts.join(', '), inline: true });
+            }
+            if (equippedSyncGifts.length > 0) {
+                embed.addFields({ name: 'Equipped Sync Gifts', value: equippedSyncGifts.join(', '), inline: true });
+            }
 
             await interaction.reply({ embeds: [embed] });
 
@@ -145,7 +170,7 @@ module.exports = {
             const itemSubType = egoItem.sub_type;
 
             if (itemType === 'gift') {
-                const equippedGifts = Object.values(dbInventory[userId].equipped).filter(equippedItem => {
+                const equippedGifts = Object.values(dbInventory[userId].equipped.gifts).filter(equippedItem => {
                     const equippedEgoItem = dbEgo.egogifts[equippedItem.item_id];
                     return equippedEgoItem && equippedEgoItem.type === 'gift';
                 });
@@ -155,13 +180,13 @@ module.exports = {
                 }
             
                 if (itemSubType === 'psync') {
-                    const totalSlots = equippedGifts.length + (dbInventory[userId].equipped['psync'] ? 2 : 0);
+                    const totalSlots = equippedGifts.length + (dbInventory[userId].equipped.gifts['psync'] ? 2 : 0);
                     if (totalSlots >= 9) {
                         return interaction.reply('You cannot equip more gifts or PSync items.');
                     }
-                    dbInventory[userId].equipped['psync'] = item;
+                    dbInventory[userId].equipped.gifts['psync'] = item;
                 } else {
-                    const totalSlots = equippedGifts.length + (dbInventory[userId].equipped['psync'] ? 2 : 0);
+                    const totalSlots = equippedGifts.length + (dbInventory[userId].equipped.gifts['psync'] ? 2 : 0);
                     if (totalSlots >= 8) {
                         return interaction.reply('You cannot equip more gifts.');
                     }
@@ -169,7 +194,7 @@ module.exports = {
                     if (universalSlots >= 5) {
                         return interaction.reply('You cannot equip more universal gifts.');
                     }
-                    dbInventory[userId].equipped[`gifts_${itemSubType}_${equippedGifts.length}`] = item;
+                    dbInventory[userId].equipped.gifts[`gifts_${itemSubType}_${equippedGifts.length}`] = item;
                 }
             } else {
                 if (dbInventory[userId].equipped[itemType]) {
@@ -183,9 +208,15 @@ module.exports = {
 
         } else if (subcommand === 'unequip') {
             const itemName = interaction.options.getString('item').toLowerCase();
+            const itemType = interaction.options.getString('itemtype').toLowerCase();
             const equippedItems = dbInventory[userId].equipped;
+            if (!equippedItems) {
+                return interaction.reply('You have no equipped items.');
+            } 
+        
             let itemKey;
-
+        
+            // Check for equipped items in both the main equipped object and the gifts sub-object
             for (const key in equippedItems) {
                 const egoItem = dbEgo.egogifts[equippedItems[key].item_id] || dbEgo.egoweapons[equippedItems[key].item_id] || dbEgo.egosuits[equippedItems[key].item_id];
                 if (egoItem && egoItem.name.toLowerCase() === itemName) {
@@ -193,12 +224,27 @@ module.exports = {
                     break;
                 }
             }
-
+        
+            if (!itemKey && equippedItems.gifts) {
+                for (const key in equippedItems.gifts) {
+                    const egoItem = dbEgo.egogifts[equippedItems.gifts[key].item_id] || dbEgo.egoweapons[equippedItems.gifts[key].item_id] || dbEgo.egosuits[equippedItems.gifts[key].item_id];
+                    if (egoItem && egoItem.name.toLowerCase() === itemName) {
+                        itemKey = key;
+                        break;
+                    }
+                }
+            }
+        
             if (!itemKey) {
                 return interaction.reply('Item not found in your equipped items.');
             }
-
-            delete dbInventory[userId].equipped[itemKey];
+        
+            if (equippedItems[itemKey]) {
+                delete dbInventory[userId].equipped[itemKey];
+            } else if (equippedItems.gifts && equippedItems.gifts[itemKey]) {
+                delete dbInventory[userId].equipped.gifts[itemKey];
+            }
+        
             writeDatabase('inventory.json', dbInventory);
             await interaction.reply(`You have unequipped ${itemName}.`);
         }
