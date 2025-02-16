@@ -16,6 +16,7 @@ L.T.M Auri is a private Discord bot project, inspired by the worlds of Dungeons 
     - `view`: View your inventory.
     - `equip`: Equip an item from your inventory.
     - `unequip`: Unequip the currently equipped item.
+    - `inspect`: Inspect further details of a specific item in an user inventory
 - `/checkdata`: Check your own data.
 - `/setuser`: Set a user field in the database.
 - `/adduser`: Add or update a user in the database.
